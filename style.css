@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Style the header */
+header {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the ingredients section */
+  .ingredients {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+/* Style the cooking instructions section */
+.instructions {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.inst {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+/* Style the photo section */
+  .photo {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Style the photo */
+  .photo img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Apply responsive styles */
+
+@media screen and (min-width: 768px) {
+
+/* Float the photo section to the left of the instructions section */
+.photo {
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 20px;
+    }
+  
+    /* Adjust the width of the instructions section to 50% */
+    .instructions {
+      width: 100%;
+      box-sizing: border-box;
+    }     
+}
+
+@media screen and (max-width: 768px) {
+    
+    .inst {
+        display: flex;
+        flex-direction: column-reverse;
+    }     
+}
+    
